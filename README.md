@@ -19,6 +19,55 @@ The project builds a complete **data analytics pipeline** using Python — start
 
 ---
 
+## 📂 Project Structure
+
+The project is organized like a real-world analytics repository:
+
+```
+Ecommerce-Analytics/
+│
+├── data/
+│   ├── raw/                # Original CSV datasets (input files)
+│   └── processed/          # Cleaned and transformed data
+│
+├── notebooks/
+│   └── ecommerce_analysis.ipynb   # Final analysis notebook
+│
+├── src/                    # Reusable Python source code
+│   ├── __init__.py
+│   ├── config.py           # Paths and project configuration
+│   │
+│   ├── data/
+│   │   ├── load_data.py    # Loading datasets
+│   │   ├── clean_data.py   # Data cleaning logic
+│   │   └── merge_data.py   # Dataset merging
+│   │
+│   ├── analysis/
+│   │   └── metrics.py      # Feature engineering & calculations
+│   │
+│   └── visualization/
+│       └── dashboard.py    # Seaborn dashboard plots
+│
+├── reports/
+│   └── figures/            # Saved visualization outputs
+│
+├── requirements.txt        # Python dependencies
+├── README.md
+└── .gitignore
+```
+
+This structure separates:
+
+* **Raw data**
+* **Processing logic**
+* **Analysis**
+* **Visualization**
+* **Final notebook**
+
+— just like in professional data teams.
+
+---
+
 ## 📂 Input Datasets
 
 The analysis is based on three CSV files:
@@ -115,9 +164,23 @@ A mini dashboard was built using **Seaborn**, containing:
 
 ## ▶ How to Run
 
+
 ```bash
+# 1️⃣ Create virtual environment
+python -m venv .venv
+
+# 2️⃣ Activate virtual environment
+# On Windows:
+.venv\Scripts\activate
+# On Linux / macOS:
+source .venv/bin/activate
+
+# 3️⃣ Install dependencies
 pip install -r requirements.txt
-jupyter notebook notebooks/ecommerce_sales_analysis.ipynb
+
+# 4️⃣ Launch Jupyter Notebook
+jupyter notebook notebooks/ecommerce_analysis.ipynb
+
 ```
 
 ---
@@ -138,4 +201,3 @@ This project was completed as part of a **Data Analytics Libraries using Python*
 ## 📌 Final Note
 
 This project demonstrates how real-world business data can be cleaned, validated, modeled, and visualized to support strategic and operational decisions.
-

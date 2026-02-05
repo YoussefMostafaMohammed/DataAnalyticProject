@@ -1,0 +1,78 @@
+# ==============================
+# 🐍 Python
+# ==============================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==============================
+# 📓 Jupyter Notebook
+# ==============================
+.ipynb_checkpoints
+
+# ==============================
+# 🌱 Virtual Environments
+# ==============================
+venv/
+env/
+ENV/
+.venv/
+
+# ==============================
+# 🔐 Secrets / Config
+# ==============================
+.env
+.env.*
+config.yaml
+secrets.json
+
+# ==============================
+# 🧠 IDE / Editor
+# ==============================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==============================
+# 💻 OS Files
+# ==============================
+.DS_Store
+Thumbs.db
+
+# ==============================
+# 🧪 Testing / Coverage
+# ==============================
+htmlcov/
+.coverage
+.coverage.*
+.pytest_cache/
+.tox/
+
+# ==============================
+# 📦 Logs
+# ==============================
+*.log
+
+# ==============================
+# 🧰 MyPy / Linters
+# ==============================
+.mypy_cache/
+.ruff_cache/
